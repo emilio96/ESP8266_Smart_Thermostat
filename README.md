@@ -1,4 +1,4 @@
-# ESP8266 Dual-Unit Smart Thermostat (v12)
+# ESP8266 Dual-Unit Smart Thermostat
 
 This is an advanced, dual-ESP8266 smart thermostat project. It consists of two main parts:
 1.  **Main Controller (NodeMCU V3):** Acts as the central hub. It reads local temperature, controls the boiler relay, connects to WiFi for time/weather, and displays all information on an OLED screen.
@@ -38,8 +38,8 @@ The main controller uses this remote sensor data for its "Continuous" heating mo
 
 This repository contains the code for both microcontrollers:
 
-* `ESP8266_code_v12.txt`: The firmware for the **Main Controller (NodeMCU V3)**.
-* `esp01s_code_v5.txt`: The firmware for the **Remote Sensor (ESP-01S)**.
+* `ESP8266_code_v12.ino`: The firmware for the **Main Controller (NodeMCU V3)**.
+* `esp01s_code_v5.ino`: The firmware for the **Remote Sensor (ESP-01S)**.
 
 ---
 
@@ -91,7 +91,7 @@ Ensure these libraries are installed via your Arduino IDE's Library Manager.
 
 You **must** edit the following variables in both files before uploading:
 
-### 1. Main Controller (`ESP8266_code_v12.txt`)
+### 1. Main Controller (`ESP8266_code_v12.ino`)
 
 // WiFi Credentials
 const char *ssid = ""; // insert your network SSID
